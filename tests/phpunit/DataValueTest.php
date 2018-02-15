@@ -152,17 +152,6 @@ abstract class DataValueTest extends PHPUnit_Framework_TestCase {
 
 		$this->assertInternalType( 'string', $hash );
 		$this->assertEquals( $hash, $value->getHash() );
-		$this->assertEquals( $hash, $value->getCopy()->getHash() );
-	}
-
-	/**
-	 * @dataProvider instanceProvider
-	 */
-	public function testGetCopy( DataValue $value, array $arguments ) {
-		$copy = $value->getCopy();
-
-		$this->assertInstanceOf( DataValue::class, $copy );
-		$this->assertTrue( $value->equals( $copy ) );
 	}
 
 	/**

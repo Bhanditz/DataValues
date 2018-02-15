@@ -62,6 +62,11 @@ Contributions where also made by [several other awesome people]
 
 ## Release notes
 
+### 3.0.0 (dev)
+
+* Removed `getCopy` from the `DataValue` interface and all implementations
+* Removed `getSortKey` from the `DataValue` interface and all implementations
+
 ### 2.1.1 (2017-09-28)
 
 * Fixed `DataValueTest` not being installable via Composer
